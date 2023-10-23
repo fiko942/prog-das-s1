@@ -8,4 +8,6 @@ add_executable(ProgDas_c_
         module3_kegiatan1.c
         module3_codelab2.c
         module3_codelab1_new.c
-        module3_codelab1_new_method2.c)
+        module3_codelab1_new_method2.c
+        module3_codelab1_new_method3.c
+)

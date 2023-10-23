@@ -79,6 +79,12 @@ build CMakeFiles/ProgDas_c_.dir/module3_codelab1_new_method2.c.obj: C_COMPILER__
   OBJECT_DIR = CMakeFiles\ProgDas_c_.dir
   OBJECT_FILE_DIR = CMakeFiles\ProgDas_c_.dir
 
+build CMakeFiles/ProgDas_c_.dir/module3_codelab1_new_method3.c.obj: C_COMPILER__ProgDas_c__unscanned_Debug C$:/Users/LENOVO/CLionProjects/ProgDas(c)/module3_codelab1_new_method3.c || cmake_object_order_depends_target_ProgDas_c_
+  DEP_FILE = CMakeFiles\ProgDas_c_.dir\module3_codelab1_new_method3.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ProgDas_c_.dir
+  OBJECT_FILE_DIR = CMakeFiles\ProgDas_c_.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ProgDas_c_
@@ -87,7 +93,7 @@ build CMakeFiles/ProgDas_c_.dir/module3_codelab1_new_method2.c.obj: C_COMPILER__
 #############################################
 # Link the executable ProgDas_c_.exe
 
-build ProgDas_c_.exe: C_EXECUTABLE_LINKER__ProgDas_c__Debug CMakeFiles/ProgDas_c_.dir/module3_codelab1.c.obj CMakeFiles/ProgDas_c_.dir/module3_kegiatan1.c.obj CMakeFiles/ProgDas_c_.dir/module3_codelab2.c.obj CMakeFiles/ProgDas_c_.dir/module3_codelab1_new.c.obj CMakeFiles/ProgDas_c_.dir/module3_codelab1_new_method2.c.obj
+build ProgDas_c_.exe: C_EXECUTABLE_LINKER__ProgDas_c__Debug CMakeFiles/ProgDas_c_.dir/module3_codelab1.c.obj CMakeFiles/ProgDas_c_.dir/module3_kegiatan1.c.obj CMakeFiles/ProgDas_c_.dir/module3_codelab2.c.obj CMakeFiles/ProgDas_c_.dir/module3_codelab1_new.c.obj CMakeFiles/ProgDas_c_.dir/module3_codelab1_new_method2.c.obj CMakeFiles/ProgDas_c_.dir/module3_codelab1_new_method3.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ProgDas_c_.dir
