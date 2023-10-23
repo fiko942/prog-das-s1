@@ -6,4 +6,5 @@ set(CMAKE_C_STANDARD 17)
 add_executable(ProgDas_c_
         module3_codelab1.c
         module3_kegiatan1.c
-        module3_codelab2.c)
+        module3_codelab2.c
+        module3_codelab1_new.c)
