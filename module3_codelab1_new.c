@@ -11,20 +11,20 @@ int main() {
         return 1;
     }
 
-    char nilaiStr[2];
+    char *nilaiStr;
     if(nilai >= 90) {
-        nilaiStr[0] = 'A';
+        nilaiStr = "A";
     } else if(nilai >= 80) {
-        nilaiStr[0] = 'B';
+        nilaiStr = "B";
     } else if(nilai >= 70) {
-        nilaiStr[0] = 'C';
+        nilaiStr = "C";
     } else if(nilai > 60) {
-        nilaiStr[0] = 'D+';
+        nilaiStr = "D+";
     }
     else if(nilai > 50) {
-        nilaiStr[0] = 'D';
+        nilaiStr = "D";
     } else {
-        nilaiStr[0] = 'E+';
+        nilaiStr = "E+";
     }
 
     printf("Nilai anda adalah: %s", nilaiStr);
