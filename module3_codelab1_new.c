@@ -11,7 +11,7 @@ int main() {
         return 1;
     }
 
-    char nilaiStr[1];
+    char nilaiStr[2];
     if(nilai >= 90) {
         nilaiStr[0] = 'A';
     } else if(nilai >= 80) {
@@ -19,9 +19,12 @@ int main() {
     } else if(nilai >= 70) {
         nilaiStr[0] = 'C';
     } else if(nilai > 60) {
+        nilaiStr[0] = 'D+';
+    }
+    else if(nilai > 50) {
         nilaiStr[0] = 'D';
     } else {
-        nilaiStr[0] = 'E';
+        nilaiStr[0] = 'E+';
     }
 
     printf("Nilai anda adalah: %s", nilaiStr);
