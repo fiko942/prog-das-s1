@@ -3,23 +3,29 @@
 enum Makanan {
 	NasiGoreng = 1,
 	MieGoreng,
-	AyamGoreng
+	AyamGoreng,
+    PentolPakJio,
+    GeprekMakJami
 };
 
 enum Minuman {
 	AirMineral = 1,
 	EsTeh,
-	JusJeruk
+	JusJeruk,
+    AnggurMerah,
+    STMJ
 };
 
 int main(){
 	int pilihMakan;
 	printf("===== Rumah Makan =====\n");
 	printf("Menu Makanan:\n");
-	printf("1. Nasi Goreng   Rp. 50.000\n");
-	printf("2. Mie Goreng    Rp. 45.000\n");
-	printf("3. Ayam Goreng   Rp. 65.000\n");
-	printf("Pilih menu makanan (1-3): ");
+	printf("1. Nasi Goreng      Rp. 50.000\n");
+	printf("2. Mie Goreng       Rp. 45.000\n");
+	printf("3. Ayam Goreng      Rp. 65.000\n");
+    printf("4. Pentol Pak Jio   Rp. 75.000\n");
+    printf("5. Geprek Mak Jami  Rp. 85.000\n");
+	printf("Pilih menu makanan (1-5): ");
 	scanf("%d", &pilihMakan);
 	enum Makanan makan;
 	if (pilihMakan == 1) {
@@ -28,10 +34,14 @@ int main(){
 		makan = MieGoreng;
 	}else if (pilihMakan == 3) {
 		makan = AyamGoreng;
-	}else {
-		printf("Anda hanya dapat memilih dari 1-3");
-		return 0;
-	};
+	} else if(pilihMakan == 4) {
+        makan = PentolPakJio;
+    } else if(pilihMakan == 5) {
+        makan = GeprekMakJami;
+    } else {
+        printf("Anda hanya dapat memilih dari 1-5");
+        return 0;
+    }
 	float hargaMakan;
 	switch(makan) {
 		case 1:
@@ -43,15 +53,22 @@ int main(){
 		case 3: 
 			hargaMakan = 65000;
 			break;
+        case 4:
+            hargaMakan = 75000;
+            break;
+        case 5:
+            hargaMakan = 85000;
+            break;
 	}
-	
-	
+
 	int pilihMinum;
 	printf("\n\nMenu Minuman:\n");
-	printf("1. Air Mineral   Rp. 13.000\n");
-	printf("2. Es Teh        Rp. 15.000\n");
-	printf("3. Jus Jeruk     Rp. 20.000\n");
-	printf("Pilih menu minuman (1-3): ");
+	printf("1. Air Mineral      Rp. 13.000\n");
+	printf("2. Es Teh           Rp. 15.000\n");
+	printf("3. Jus Jeruk        Rp. 20.000\n");
+    printf("4. Anggur Merah     Rp. 25.000\n");
+    printf("5. STMJ             Rp. 30.000\n");
+	printf("Pilih menu minuman (1-5): ");
 	scanf("%d", &pilihMinum);
 	enum Minuman minum;
 	if (pilihMinum == 1) {
@@ -59,9 +76,13 @@ int main(){
 	}else if (pilihMinum == 2) {
 		minum = EsTeh;
 	}else if (pilihMinum == 3) {
-		minum = JusJeruk;
+        minum = JusJeruk;
+    } else if(pilihMinum == 4) {
+        minum = AnggurMerah;
+    } else if(pilihMinum == 5) {
+        minum = STMJ;
 	}else {
-		printf("Anda hanya dapat memilih dari 1-3");
+		printf("Anda hanya dapat memilih dari 1-5");
 	}
 	float hargaMinum;
 	switch(minum) {
@@ -74,6 +95,12 @@ int main(){
 		case 3: 
 			hargaMinum = 20000;
 			break;
+        case 4 :
+            hargaMinum = 25000;
+            break;
+        case 5 :
+            hargaMinum = 30000;
+            break;
 	}
 	
 	char apakahMember;
